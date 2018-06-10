@@ -1,0 +1,7 @@
+# ignoer node_mdoule
+
+node_modules
+
+#ignore build folder
+
+build

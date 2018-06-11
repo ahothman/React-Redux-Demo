@@ -14,8 +14,22 @@ module.exports = {
   module:{
     rules:[
         {
-            test:/\.jsx$/,
-            use:'babel-loader'
+            test: /\.jsx$/,
+            use: 'babel-loader'
+        },
+        {
+           test: /\.scss$/,
+           use:[
+               {
+                   loader: 'style-loader'
+               },
+               {
+                    loader: 'css-loader'
+               },
+               {
+                    loader: 'sass-loader'
+               }
+           ]
         }
     ]
   }

@@ -1,0 +1,34 @@
+
+body{
+    background-color: #F3F7F8;
+    color:#616161;
+}
+
+a {
+    color: inherit;
+    outline: none;
+    text-decoration: none;
+}
+
+.container {
+    padding: 10px;
+}
+
+/***********  input styles *************/
+.btn {
+    background-color: #68c39f;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.custom-input {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 8px #eee;
+    outline: none;  
+}

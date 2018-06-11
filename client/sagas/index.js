@@ -5,7 +5,7 @@ var getArtistEventsSaga = require('./getArtistEventsSaga.js')
 
 function* rootSaga(){
  yield all([
-     getArtistEventsSaga(),
+     takeEvery(actionTypes.GET_ARTIST_EVENTS, getArtistEventsSaga),
      takeEvery(actionTypes.SEARCH_ARTIST_BY_NAME,searchArtistSaga)
  ])
 }

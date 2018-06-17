@@ -8,8 +8,10 @@ var { getArtistByName } = require('../api')
 
 function* SearchArtistSaga(payload){
     var { name } = payload
-    var response = yield call(getArtistByName,name)
+    /** clear the previous data  */
     yield put(isInAjaxCall(true))
+    yield put(searchArtistSuccess(null))
+    var response = yield call(getArtistByName,name)
     if(response instanceof Error){
         yield put(searchArtistFailure(response.message))
         yield put(isInAjaxCall(false))

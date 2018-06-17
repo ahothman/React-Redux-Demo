@@ -14,6 +14,19 @@ a {
     padding: 10px;
 }
 
+.no-result {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.text-truncate {
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
 /***********  input styles *************/
 .btn {
     background-color: #68c39f;

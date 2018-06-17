@@ -11,9 +11,16 @@ function searchArtistSuccess(artist){
 function searchArtistFailure(message){
     return {type:actionTypes.searchArtistFailure, message}
 }
+/** Use Redux to presist the artist name 
+ *  so it will be displayed when the page get refreshed
+ */
+function setArtistName(artistName){
+    return {type:actionTypes.SET_ARTIST_NAME, artistName}
+}
 
 module.exports = {
   searchArtist,
+  setArtistName,
   searchArtistSuccess,
   searchArtistFailure
 }

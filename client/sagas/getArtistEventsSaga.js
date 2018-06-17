@@ -6,6 +6,8 @@ var { isInAjaxCall }  = require('../actions/ajaxActions.js')
 
 function* getArtistEventSaga(payLoad){
     var { name } = payLoad
+    /** clear the previous data  */
+    yield put(getArtistEventsSuccess([]))
     var response = yield call(getArtistEvents, name)
     if(response instanceof Error){
         yield put(getArtistEventsFailure(response.message))

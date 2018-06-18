@@ -9,7 +9,7 @@ function getArtistEventsSuccess(events){
 }
 
 function getArtistEventsFailure(message){
-    return {type:actionTypes.getArtistEventsFailure, message}
+    return {type:actionTypes.GET_ARTIST_EVENTS_FAILURE, message}
 }
 
 module.exports = {
